@@ -1,0 +1,22 @@
+<ux-header>
+  <ux-header-row>
+    <ux-header-logo></ux-header-logo>
+    <ux-header-tabs
+      [addButton]="_addButton"
+      [block]="_block"
+      [type]="_type"
+      [(tabs)]="_tabs"
+      (onTabClick)="_onTabClick($event)"
+      (onCloseClick)="_onCloseClick($event)"
+      (onAddClick)="_onAddClick()"
+    ></ux-header-tabs>
+
+    <ux-header-button>
+      <ux-header-button [active]="_active" (click)="_onButtonClick()">
+        <ux-icon name="notificationOutline20"></ux-icon>
+      </ux-header-button>
+      <ux-icon name="header-user-custom-icon"></ux-icon>
+    </ux-header-button>
+  </ux-header-row>
+</ux-header>
+
